@@ -1,13 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+export default (props) => {
   return (
-    <div className="App">
-     React ESRI Template
-    </div>
-  );
-}
+      <div className='h-100 w-100 container-fluid p-0 m-0' id='app-div'>
+          {/* <Navbar /> */}
+          {/* <div className="w-100 m-0 p-0 h-100" id="body-container"> */}
 
-export default App;
+              {props.children}
+          {/* </div> */}
+      </div>
+  )
+}
